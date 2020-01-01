@@ -556,7 +556,7 @@ header{
     background-color: #ffe838;
 }
 
-.timeline .date:hover::after{
+.timeline .date:hover::after{    
     animation: onOff .5s linear infinite;    
 }
 /*End timeline*/
@@ -654,17 +654,18 @@ input[type="submit"]:hover{
 }
 
 @keyframes onOff{
-    0% {
-        opacity: 0;
+    0% {        
+        background-color: transparent;
     }
 
-    50% {
-        opacity: 1;
+    50% {        
+        background-color: #ffe838;
     }
 
     100% {
-        opacity: 0;
+        background-color: transparent;
     }
+    
 }
 /*End animations*/
 
