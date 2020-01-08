@@ -14,8 +14,8 @@ $(document).ready(function (){
     var aboutOffSetTop = $('.about').offset().top - 100;
     var servicesOffSetTop = $('.services').offset().top - 100;
     var portfolioOffSetTop = $('.portfolio').offset().top - 100;
-    var experienceOffSetTop = $('.experience').offset().top - 100;
-    var contactOffSetTop = $('.contact').offset().top - 100;
+    var experienceOffSetTop = $('.experience').offset().top - 150;
+    var contactOffSetTop = $('.contact').offset().top - 250;
 
     $(window).scroll(function(){        
 

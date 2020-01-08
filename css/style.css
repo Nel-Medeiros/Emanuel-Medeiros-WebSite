@@ -58,6 +58,11 @@ img {
     src: url("../fonts/chocolate_drink/Chocolate_DRINK_DEMO.ttf")   
 }
 
+@font-face{
+    font-family: 'Trump Gothic East';
+    src: url("../fonts/trump_gothic_east/trump_gothic_east_bold.ttf")   
+}
+
 .container{
     width: 90%;
     max-width: 120rem;
@@ -157,6 +162,7 @@ header{
 }
     
 .default-nav .brand{
+    font-family: 'Trump Gothic East', sans-serif;    
     left: 11rem;
     font-weight: bold;
 }
@@ -249,7 +255,8 @@ header{
 }
 
 .nav-link{
-    font-family: 'Chocolate Drink', sans-serif;
+    font-family: 'Trump Gothic East', sans-serif;
+    text-transform: uppercase;
     font-size: 3rem;
     padding: 1rem;
 }
@@ -326,7 +333,7 @@ header{
 
 .landing-text h1{
     font-size: 10rem;
-    font-family: Helvetica, Arial, sans-serif;    
+    font-family: 'Trump Gothic East', Helvetica, Arial, sans-serif;    
     background: linear-gradient(to top,#52de97, #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -336,7 +343,7 @@ header{
 }
 
 .landing-text h6{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 300;
 }
 /*End header*/
@@ -568,38 +575,51 @@ header{
     background-color: #221e3f;
 }
 
-form{
-    width: 70%;
-    margin: 0 auto;    
-}
-
-form label{
-    font-size: 1.5rem;
-}
-
-input,
-select,
-textarea{
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 5px;
-    border: none;
-    outline-color: #8d69f1;
-}
-
-input[type="submit"]{
-    width: initial;
+.contactMail{   
+    position: relative;    
+    margin: 0 auto;            
     background-color: #8d69f1;
-    color: #eee;
-    padding: 1rem 2rem;
-    border-radius: .8rem;
-    cursor: pointer;
-    transition: background-color 650ms;
+    border-radius: 50px;
+    width: 60rem;
+    height: 10rem;
+    transform: translateY(-50px);  
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);      
 }
 
-input[type="submit"]:hover{
-    color: #221e3f;
-    background-color: #52de97;
+.mailElement{    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+.mail{    
+    font-size: 2.7rem; 
+    font-weight: 700; 
+    transition: all .3s ease;
+}
+
+.mail:hover{
+    color: #52de97;
+}
+
+.contIconList{
+    text-align: center;
+}
+
+.mailElement li{
+    list-style: none;
+    display: inline-block;    
+}
+
+.contIcon{
+    font-size: 2rem;
+    margin: 0 2rem; 
+    transition: all .3s ease;   
+}
+
+.contIcon:hover{
+    color: #52de97;    
 }
 /*End contact*/
 
@@ -698,12 +718,12 @@ input[type="submit"]:hover{
     }
 
     .landing-text h6{
-        font-size: 2rem;        
+        font-size: 4rem;        
     }
 
     .nav-list{
         flex-direction: column;
-    }
+    }    
 
     li{
         margin: 2rem 0;
@@ -718,7 +738,7 @@ input[type="submit"]:hover{
     }
 
     .section-heading h1{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .about-details .nav-list{
@@ -749,6 +769,23 @@ input[type="submit"]:hover{
     .timeline .date::after{
         left: -5.9rem;
     }
+
+    .contactMail{
+        width: 40rem;
+    }
+
+    .mail{
+        font-size: 2rem;
+        margin-bottom: -3rem;
+    }    
+
+    .contIconList {
+        margin-bottom: -1rem;
+    }
+
+    .contIconList li{
+        margin: 3px 1rem;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -762,7 +799,7 @@ input[type="submit"]:hover{
     }
 
     .landing-text h6{
-        font-size: 1.4rem;        
+        font-size: 2rem;        
     }
 
     .nav-link{
