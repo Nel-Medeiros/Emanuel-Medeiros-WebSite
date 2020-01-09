@@ -49,11 +49,6 @@ img {
 
 /*Start reusable*/
 @font-face{
-    font-family: 'The Historia Demo';
-    src: url("../fonts/the_historia/TheHistoriaDemo.ttf")   
-}
-
-@font-face{
     font-family: 'Chocolate Drink';
     src: url("../fonts/chocolate_drink/Chocolate_DRINK_DEMO.ttf")   
 }
@@ -258,7 +253,7 @@ header{
     font-family: 'Trump Gothic East', sans-serif;
     text-transform: uppercase;
     font-size: 3rem;
-    padding: 1rem;
+    padding: 1rem;    
 }
 
 .nav-link:hover,
@@ -575,6 +570,10 @@ header{
     background-color: #221e3f;
 }
 
+.contact-heading{
+    margin-bottom: 4rem;
+}
+
 .contactMail{   
     position: relative;    
     margin: 0 auto;            
@@ -835,15 +834,27 @@ header{
     .timeline .date::before{
         font-size: 1.4rem;
     }
-
-    form{
-        width: 100%;
-    }
-
+    
     .up{
         right: 2rem;
     }
 
+    .contactMail{
+        width: 30rem;
+    }
+
+    .mail{
+        font-size: 1.5rem;
+        margin-bottom: -3rem;
+    }    
+
+    .contIconList {
+        margin-bottom: -1rem;
+    }
+
+    .contIconList li{
+        margin: 3px 1rem;
+    }
 
 }
 
