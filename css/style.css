@@ -26,6 +26,11 @@ body{
     background-size: cover;
 }
 
+body[data-aos-delay='5500'] [data-aos],
+  [data-aos][data-aos][data-aos-delay='5500'] {
+    transition-delay: 5500ms;
+  }
+
 section{
     padding: 6rem 0;    
 }
@@ -56,6 +61,11 @@ img {
 @font-face{
     font-family: 'Trump Gothic East';
     src: url("../fonts/trump_gothic_east/trump_gothic_east_bold.ttf")   
+}
+
+@font-face{
+    font-family: 'Kaushan Script';
+    src: url("../fonts/kaushan_script/KaushanScript-Regular.ttf")   
 }
 
 .container{
@@ -157,7 +167,7 @@ header{
 }
     
 .default-nav .brand{
-    font-family: 'Trump Gothic East', sans-serif;    
+    font-family: 'Kaushan Script', sans-serif;    
     left: 11rem;
     font-weight: bold;
 }
@@ -321,25 +331,244 @@ header{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    height: 500px;
     width: 100%;
     text-align: center;
     z-index: 1;
+    display: flex;
+    justify-content: center;
 }
 
-.landing-text h1{
-    font-size: 10rem;
-    font-family: 'Trump Gothic East', Helvetica, Arial, sans-serif;    
-    background: linear-gradient(to top,#52de97, #fff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 1rem;
-    user-select: none;
-    font-weight: 300;
+/*Desktop Logo Animation START*/
+
+#logo {    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fill 0.5s ease forwards 5s;
+}
+
+#logo path:nth-child(1) {
+    stroke-dasharray: 544.8109741210938;
+    stroke-dashoffset: 544.8109741210938;
+    animation: line-anim 2s ease forwards;
+}
+
+#logo path:nth-child(2) {
+    stroke-dasharray: 667;
+    stroke-dashoffset: 667;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+
+#logo path:nth-child(3) {
+    stroke-dasharray: 399;
+    stroke-dashoffset: 399;
+    animation: line-anim 2s ease forwards 0.6s;
+}
+
+#logo path:nth-child(4) {
+    stroke-dasharray: 423;
+    stroke-dashoffset: 423;
+    animation: line-anim 2s ease forwards 0.9s;
+}
+
+#logo path:nth-child(5) {
+    stroke-dasharray: 383.79144287109375;
+    stroke-dashoffset: 383.79144287109375;
+    animation: line-anim 2s ease forwards 1.2s;
+}
+
+#logo path:nth-child(6) {
+    stroke-dasharray: 361;
+    stroke-dashoffset: 361;
+    animation: line-anim 2s ease forwards 1.5s;
+}
+
+#logo path:nth-child(7) {
+    stroke-dasharray: 295.9501647949219;
+    stroke-dashoffset: 295.9501647949219;
+    animation: line-anim 2s ease forwards 1.8s;
+}
+
+#logo path:nth-child(8) {
+    stroke-dasharray: 927;
+    stroke-dashoffset: 927;
+    animation: line-anim 2s ease forwards 2.1s;
+}
+
+#logo path:nth-child(9) {
+    stroke-dasharray: 361;
+    stroke-dashoffset: 361;
+    animation: line-anim 2s ease forwards 2.4s;
+}
+
+#logo path:nth-child(10) {
+    stroke-dasharray: 477;
+    stroke-dashoffset: 477;
+    animation: line-anim 2s ease forwards 2.7s;
+}
+
+#logo path:nth-child(11) {
+    stroke-dasharray: 361;
+    stroke-dashoffset: 361;
+    animation: line-anim 2s ease forwards 3s;
+}
+
+#logo path:nth-child(12) {
+    stroke-dasharray: 227;
+    stroke-dashoffset: 227;
+    animation: line-anim 2s ease forwards 3.3s;
+}
+
+#logo path:nth-child(13) {
+    stroke-dasharray: 288.96295166015625;
+    stroke-dashoffset: 288.96295166015625;
+    animation: line-anim 2s ease forwards 3.6s;
+}
+
+#logo path:nth-child(14) {
+    stroke-dasharray: 338;
+    stroke-dashoffset: 338;
+    animation: line-anim 2s ease forwards 3.9s;
+}
+
+#logo path:nth-child(15) {
+    stroke-dasharray: 358;
+    stroke-dashoffset: 358;
+    animation: line-anim 2s ease forwards 4.2s;
+}
+
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill{
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: #8d69f1;
+    }
+}
+
+/*Desktop Logo Animation END*/
+
+
+/*Responsive Logo Animation START*/
+#logo-resp {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fill 0.5s ease forwards 5s;
+}
+
+#logo-resp path:nth-child(1) {
+    stroke-dasharray: 544.8109741210938;
+    stroke-dashoffset: 544.8109741210938;
+    animation: line-anim 2s ease forwards;
+}
+
+#logo-resp path:nth-child(2) {
+    stroke-dasharray: 667;
+    stroke-dashoffset: 667;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+
+#logo-resp path:nth-child(3) {
+    stroke-dasharray: 399;
+    stroke-dashoffset: 399;
+    animation: line-anim 2s ease forwards 0.6s;
+}
+
+#logo-resp path:nth-child(4) {
+    stroke-dasharray: 423;
+    stroke-dashoffset: 423;
+    animation: line-anim 2s ease forwards 0.9s;
+}
+
+#logo-resp path:nth-child(5) {
+    stroke-dasharray: 383.79144287109375;
+    stroke-dashoffset: 383.79144287109375;
+    animation: line-anim 2s ease forwards 1.2s;
+}
+
+#logo-resp path:nth-child(6) {
+    stroke-dasharray: 361;
+    stroke-dashoffset: 361;
+    animation: line-anim 2s ease forwards 1.5s;
+}
+
+#logo-resp path:nth-child(7) {
+    stroke-dasharray: 295.9501647949219;
+    stroke-dashoffset: 295.9501647949219;
+    animation: line-anim 2s ease forwards 1.8s;
+}
+
+#logo-resp path:nth-child(8) {
+    stroke-dasharray: 927;
+    stroke-dashoffset: 927;
+    animation: line-anim 2s ease forwards 2.1s;
+}
+
+#logo-resp path:nth-child(9) {
+    stroke-dasharray: 361;
+    stroke-dashoffset: 361;
+    animation: line-anim 2s ease forwards 2.4s;
+}
+
+#logo-resp path:nth-child(10) {
+    stroke-dasharray: 477;
+    stroke-dashoffset: 477;
+    animation: line-anim 2s ease forwards 2.7s;
+}
+
+#logo-resp path:nth-child(11) {
+    stroke-dasharray: 361;
+    stroke-dashoffset: 361;
+    animation: line-anim 2s ease forwards 3s;
+}
+
+#logo-resp path:nth-child(12) {
+    stroke-dasharray: 227;
+    stroke-dashoffset: 227;
+    animation: line-anim 2s ease forwards 3.3s;
+}
+
+#logo-resp path:nth-child(13) {
+    stroke-dasharray: 288.96295166015625;
+    stroke-dashoffset: 288.96295166015625;
+    animation: line-anim 2s ease forwards 3.6s;
+}
+
+#logo-resp path:nth-child(14) {
+    stroke-dasharray: 338;
+    stroke-dashoffset: 338;
+    animation: line-anim 2s ease forwards 3.9s;
+}
+
+#logo-resp path:nth-child(15) {
+    stroke-dasharray: 358;
+    stroke-dashoffset: 358;
+    animation: line-anim 2s ease forwards 4.2s;
+}
+
+/*Responsive Logo Animation END*/
+
+.sub-logo {
+     display: flex;
+     align-items: flex-end;
+     justify-content: center;
 }
 
 .landing-text h6{
     font-size: 3rem;
     font-weight: 300;
+    
 }
 /*End header*/
 
@@ -694,6 +923,17 @@ header{
 /*Alterar os elementos HTML dependendo do tamanho da tela*/
 
 /*Fazer com que o menu mobile não apareça em telas maiores que 768px*/
+@media screen and (max-width: 1200px) {
+    #logo{
+        display: none;
+    }
+
+    #logo-resp{
+        display: block;
+    }
+}
+
+
 @media screen and (min-width: 768px){
     .menu-toggler{
         display: none;
@@ -717,7 +957,7 @@ header{
     }
 
     .landing-text h6{
-        font-size: 4rem;        
+        font-size: 3rem;        
     }
 
     .nav-list{
